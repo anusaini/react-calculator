@@ -1,0 +1,28 @@
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border: thin solid black;
+    min-width: 50px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.calculator-number:active {
+    box-shadow: -1px -1px 1px pink;
+}
+
+.calculator-number {
+    border-color: teal;
+}
+
+.action {
+    border: thin solid pink;
+}
+
+.action:active {
+    box-shadow: -1px -1px 1px pink;
+}

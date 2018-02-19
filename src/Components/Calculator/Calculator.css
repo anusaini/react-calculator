@@ -1,0 +1,43 @@
+.calculator {
+    width: 360px;
+    border: thin solid teal;
+    margin: 20px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-touch-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.display {
+    word-wrap: break-word;
+}
+
+.display,
+.pad {
+    margin: 2px 10px;
+    padding: 10px;
+}
+
+.display .value {
+    font: bold 20px/24px 'Courier New', Courier, monospace;
+}
+
+.display .history {
+    font-size: 8px;
+}
+
+.error {
+    font-size: 10px;
+    color: red;
+}
+
+.error .close {
+    padding: 2px;
+    text-decoration: underline;
+    border: thin solid red;
+}
+
+.error .close:hover {
+    cursor: pointer;
+}
