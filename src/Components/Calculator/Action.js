@@ -1,21 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Buttons.css'
 
-class Action extends Component {
-    constructor (props) {
-        super(props)
-        this.handleClick = this.handleClick.bind(this)
+const Action = ({onButtonPress, op}) => {
+    const handleClick = () => {
+        onButtonPress(op)
     }
-    handleClick () {
-        this.props.onButtonPress(this.props.op)
-    }
-    render() {
-        return (
-            <div className="button action" onClick={this.handleClick}>
-                {this.props.op}
-            </div>
-        ) 
-    }
+    return (
+        <div className="button action" onClick={handleClick}>
+            {op}
+        </div>
+    ) 
 }
 
 export default Action

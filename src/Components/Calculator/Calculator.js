@@ -26,7 +26,7 @@ class Calculator extends Component {
     
     handleNumberPress(value) {
         this.setState(prevState => ({
-            value: prevState.value + value,
+            value: prevState.value.toString() + value,
             stack: [ ...prevState.stack, value ],
             history: this.updateHistory(value)
         }))
