@@ -61,7 +61,7 @@ class Calculator extends Component {
         return ({
             value: result,
             stack: [ result ],
-            history: this.updateHistory(result)
+            history: this.updateHistory(`=${result}`)
         })        
     }
 
